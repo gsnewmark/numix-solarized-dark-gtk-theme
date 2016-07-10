@@ -3,14 +3,14 @@
 @import "functions";
 
 // default color scheme
-$bg_color: if($variant == "dark", #002b36, #eee8d5);
-$fg_color: if($variant == "dark", #dcdcdc, #586e75);
-$base_color: if($variant == "dark", #073642, #fdf6e3);
-$text_color: if($variant == "dark", #eee8d5, #073642);
-$selected_bg_color: #859900;
+$bg_color: #073642;
+$fg_color: #839496;
+$base_color: #002b36;
+$text_color: #839496;
+$selected_bg_color: #657b83;
 $selected_fg_color: #fdf6e3;
-$tooltip_bg_color: $selected_bg_color;
-$tooltip_fg_color: $selected_fg_color;
+$tooltip_bg_color: #002b36;
+$tooltip_fg_color: #eee8d5;
 
 $selected_borders_color: if($variant == 'light', darken($selected_bg_color, 30%), darken($selected_bg_color, 20%));
 $borders_color: if($variant == 'light', shade($bg_color, .85), shade($bg_color, .88));
@@ -21,8 +21,8 @@ $dark_bg_color: $bg_color;
 $dark_fg_color: $fg_color;
 
 // shadows
-$dark_shadow: #000;
-$light_shadow: #fff;
+$dark_shadow: #fff;
+$light_shadow: #000;
 
 // white and black
 $black: #000;
@@ -45,18 +45,18 @@ $switch_fg_color: #8e969e;
 $switch_slider_bg_color: #fbfbfb;
 
 // misc colors used by gtk+
-$info_fg_color: if($variant == "dark", #3a87ad, #266ed2);
-$info_bg_color: if($variant == "dark", #d9edf7, #d9edf7);
-$warning_fg_color: if($variant == "dark", #c09853, #b58900);
-$warning_bg_color: if($variant == "dark", #d64937, #fcf8e3);
-$question_fg_color: if($variant == "dark", #d64937, #cb4b16);
-$question_bg_color: if($variant == "dark", #fce5d5, #fce5d5);
-$error_fg_color: if($variant == "dark", #b94a48, #dc322f);
-$error_bg_color: if($variant == "dark", #f2dede, #f2dede);
-$link_color: if($variant == "dark", #fc6f5d, #d33682);
-$success_color: if($variant == "dark", #53a93f, #859900);
-$warning_color: if($variant == "dark", #f57900, #cb4b16);
-$error_color: if($variant == "dark", #cc0000, #dc322f);
+$info_fg_color: rgb(38, 110, 210);
+$info_bg_color: rgb(217, 237, 247);
+$warning_fg_color: rgb(181, 137, 0);
+$warning_bg_color: rgb(252, 248, 227);
+$question_fg_color: rgb(203, 75, 22);
+$question_bg_color: rgb(252, 229, 213);
+$error_fg_color: rgb(220, 50, 47);
+$error_bg_color: rgb(242, 222, 222);
+$link_color: #d33682;
+$success_color: #859900;
+$warning_color: #cb4b16;
+$error_color: #dc322f;
 
 $toolbar_bg_color: $bg_color;
 $toolbar_fg_color: $fg_color;

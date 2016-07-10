@@ -7,7 +7,7 @@ DIST_DIR=$(RES_DIR)/dist
 RES_DIR320=gtk-3.20
 SCSS_DIR320=$(RES_DIR320)/scss
 DIST_DIR320=$(RES_DIR320)/dist
-INSTALL_DIR=$(DESTDIR)/usr/share/themes/NumixSolarized
+INSTALL_DIR=$(DESTDIR)/usr/share/themes/NumixSolarizedDark
 
 all: clean gresource
 
