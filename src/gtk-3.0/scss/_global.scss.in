@@ -1,0 +1,79 @@
+// scss-lint:disable ColorVariable
+
+@import "functions";
+
+// default color scheme
+$bg_color: if($variant == "dark", @BG_COLOR_DARK@, @BG_COLOR_LIGHT@);
+$fg_color: if($variant == "dark", @FG_COLOR_DARK@, @FG_COLOR_LIGHT@);
+$base_color: if($variant == "dark", @BASE_COLOR_DARK@, @BASE_COLOR_LIGHT@);
+$text_color: if($variant == "dark", @TEXT_COLOR_DARK@, @TEXT_COLOR_LIGHT@);
+$selected_bg_color: @SELECTED_BG_COLOR@;
+$selected_fg_color: @SELECTED_FG_COLOR@;
+$tooltip_bg_color: @TOOLTIP_BG_COLOR@;
+$tooltip_fg_color: @TOOLTIP_FG_COLOR@;
+
+// dark colors
+$dark_bg_color: if($variant == 'dark', @DARK_BG_COLOR_DARK@, @DARK_BG_COLOR_LIGHT@);
+$dark_fg_color: if($variant == 'dark', @DARK_FG_COLOR_DARK@, @DARK_FG_COLOR_LIGHT@);
+
+// shadows
+$dark_shadow: @DARK_SHADOW@;
+$light_shadow: @LIGHT_SHADOW@;
+
+// white and black
+$black: @BLACK@;
+$white: @WHITE@;
+
+// misc colors used by gtk+
+$info_fg_color: if($variant == 'dark', @INFO_FG_COLOR_DARK@, @INFO_FG_COLOR_LIGHT@);
+$info_bg_color: if($variant == 'dark', @INFO_BG_COLOR_DARK@, @INFO_BG_COLOR_LIGHT@);
+$warning_fg_color: if($variant == 'dark', @WARNING_FG_COLOR_DARK@, @WARNING_FG_COLOR_LIGHT@);
+$warning_bg_color: if($variant == 'dark', @WARNING_BG_COLOR_DARK@, @WARNING_BG_COLOR_LIGHT@);
+$question_fg_color: if($variant == 'dark', @QUESTION_FG_COLOR_DARK@, @QUESTION_FG_COLOR_LIGHT@);
+$question_bg_color: if($variant == 'dark', @QUESTION_BG_COLOR_DARK@, @QUESTION_BG_COLOR_LIGHT@);
+$error_fg_color: if($variant == 'dark', @ERROR_FG_COLOR_DARK@, @ERROR_FG_COLOR_LIGHT@);
+$error_bg_color: if($variant == 'dark', @ERROR_BG_COLOR_DARK@, @ERROR_BG_COLOR_LIGHT@);
+$link_color: if($variant == 'dark', @LINK_COLOR_DARK@, @LINK_COLOR_LIGHT@);
+$success_color: if($variant == 'dark', @SUCCESS_COLOR_DARK@, @SUCCESS_COLOR_LIGHT@);
+$warning_color: if($variant == 'dark', @WARNING_COLOR_DARK@, @WARNING_COLOR_LIGHT@);
+$error_color: if($variant == 'dark', @ERROR_COLOR_DARK@, @ERROR_COLOR_LIGHT@);
+
+$toolbar_bg_color: $bg_color;
+$toolbar_fg_color: $fg_color;
+
+$titlebar_bg_color: $dark_bg_color;
+$titlebar_fg_color: $dark_fg_color;
+
+$menu_bg_color: $dark_bg_color;
+$menu_fg_color: $dark_fg_color;
+
+$menubar_bg_color: $dark_bg_color;
+$menubar_fg_color: $dark_fg_color;
+
+$panel_bg_color: $dark_bg_color;
+$panel_fg_color: $dark_fg_color;
+
+$osd_base: $dark_bg_color;
+$osd_fg: $dark_fg_color;
+$osd_bg: alpha($osd_base, 0.8);
+
+$lightdm_bg_color: $dark_bg_color;
+$lightdm_fg_color: $dark_fg_color;
+
+$wm_bg: $titlebar_bg_color;
+$wm_border_focused: transparent;
+$wm_border_unfocused: transparent;
+$wm_title_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
+$wm_title_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
+$wm_icons_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
+$wm_icons_focused_prelight: $selected_bg_color;
+$wm_icons_focused_pressed: shade($selected_bg_color, .8);
+$wm_icons_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
+$wm_icons_unfocused_prelight: $selected_bg_color;
+$wm_icons_unfocused_pressed: shade($selected_bg_color, .8);
+
+// widget styles
+$roundness: 2px;
+$spacing: 5px;
+$gradient: 0;
+$contrast: .8;
